@@ -4,7 +4,7 @@ import Image from "next/image";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { CSSProperties } from "react";
 
-const GEMINI_API_KEY: string = process.env.NEXT_PUBLIC_GEMINI_API_KEY
+const GEMINI_API_KEY: string = process.env.NEXT_PUBLIC_GEMINI_API_KEY ?? "gemini-api-not-found"
 console.log(GEMINI_API_KEY)
 
 // const genAI = new GoogleGenerativeAI("AIzaSyA7LEvTq7kfnfjV9GW41qygtkFSOn3hJxQ");
@@ -122,6 +122,7 @@ export default function Home() {
         console.log(imageUrl)
         // return imageUrl
         setImage(imageUrl)
+        setCaption("Your next instagram post.")
       } else {
         console.error('Failed to fetch image. Response is not OK or content-type is not image.');
       }
@@ -185,7 +186,7 @@ export default function Home() {
       else if (data.image_url && data.caption) {
         setImage(data.image_url);
         !useAi && setLongCaption(data.caption);
-        setCaption("Your next instagram post.")
+        
       }
       else {
         setCaption('Failed to generate content. Please try again or contact the developer if error persists.');
