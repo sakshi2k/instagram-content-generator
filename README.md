@@ -2,6 +2,12 @@
 
 Application deployed here: https://radiant-conkies-1212df.netlify.app 
 
+![Screenshot_2](https://github.com/sakshi2k/instagram-content-generator/tree/master/sample_app_screenshots/bird_using_binoculars.png)
+
+
+![Screenshot_2](https://github.com/sakshi2k/instagram-content-generator/tree/master/sample_app_screenshots/trip_to_paris.png)
+
+
 ### Developers section
 
 #### What does the application do
