@@ -5,12 +5,9 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { CSSProperties } from "react";
 
 const GEMINI_API_KEY: string = process.env.NEXT_PUBLIC_GEMINI_API_KEY ?? "gemini-api-not-found"
-console.log(GEMINI_API_KEY)
 
-// const genAI = new GoogleGenerativeAI("AIzaSyA7LEvTq7kfnfjV9GW41qygtkFSOn3hJxQ");
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 const textModel = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-console.log(process.env.NEXT_PUBLIC_LOCATION)
 
 const DEFAULT_CAPTION = 'Search something like : Bird eating a cake'
 const AI_PROMPT_PREFIX = "For the given prompt write a instagram caption in 80 words and suggest hashtags. The prompt is "
