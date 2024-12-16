@@ -1,5 +1,7 @@
 ## Welcome to Instagram Content Generator
 
+Application deployed here: https://radiant-conkies-1212df.netlify.app 
+
 ### Developers section
 
 #### What does the application do
@@ -16,13 +18,16 @@ Note that the server might be giving you sample response or error in case free q
 - 15 RPM (requests per minute)
 - 1 million TPM (tokens per minute)
 - 1,500 RPD (requests per day)
-More documentation here https://ai.google.dev/pricing?_gl=1*1igul18*_ga*NDcxNTExNTY2LjE3MzQxMDE5MzQ.*_ga_P1DBVKWT6V*MTczNDMwODQ4OC43LjAuMTczNDMwODQ5Mi4wLjAuMTUxMDIwNjE2Mw..#1_5flash
+- More documentation here https://ai.google.dev/pricing?_gl=1*1igul18*_ga*NDcxNTExNTY2LjE3MzQxMDE5MzQ.*_ga_P1DBVKWT6V*MTczNDMwODQ4OC43LjAuMTczNDMwODQ5Mi4wLjAuMTUxMDIwNjE2Mw..#1_5flash
 
 2. Huggingface
 
 More documentation here 
 - https://www.npmjs.com/package/@huggingface/inference
 - https://huggingface.co/black-forest-labs/FLUX.1-dev 
+
+####
+Note that the image generation could take upto 3 minutes on average
 
 #### How to run and develop locally
 1. First, run the development server:
