@@ -130,8 +130,7 @@ export default function Home() {
         .catch(error => console.error('Error fetching image:', error));
   }
 
-  const generateContentsUsingGemini = async () => {
-    generateContentsUsingAiFlag(true)
+  const generateImageCaptionUsingGemini = async () => {
     await (async () => {
       try {
         const aiPrompt = AI_PROMPT_PREFIX + prompt;
@@ -148,7 +147,7 @@ export default function Home() {
     setLoadingImg(true);
     clearData()
     setCaption(WAITING_TEXT)
-    await generateContentsUsingGemini()
+    await generateImageCaptionUsingGemini()
     await generateImageUsingHF()
     setLoading(false)
     setLoadingImg(false);
